@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import { motion } from "motion/react";
 import ContactForm from "@/app/components/ContactForm";
 
@@ -18,7 +17,7 @@ export default function Contact() {
           <h1 className="text-5xl font-bold mb-4">Get In Touch</h1>
           <div className="h-1 w-20 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            I'd love to hear from you. Whether you have a project in mind or just
+            I&apos;d love to hear from you. Whether you have a project in mind or just
             want to chat, feel free to reach out!
           </p>
         </motion.div>

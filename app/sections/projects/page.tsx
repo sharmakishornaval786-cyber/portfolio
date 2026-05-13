@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import { motion } from "motion/react";
 import ProjectCard from "@/app/components/ProjectCard";
 import { PROJECTS } from "@/lib/portfolio-data";

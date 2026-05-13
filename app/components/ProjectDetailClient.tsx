@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
+import Image from "next/image";
 import { Project } from "@/lib/portfolio-data";
 
 interface ProjectDetailClientProps {
@@ -61,9 +62,11 @@ export default function ProjectDetailClient({
           className="h-96 mb-12 rounded-lg overflow-hidden bg-gradient-to-br from-blue-400 to-purple-600"
         >
           {project.image && (
-            <img
+            <Image
               src={project.image}
               alt={project.title}
+              width={800}
+              height={400}
               className="w-full h-full object-cover"
             />
           )}

@@ -1,8 +1,7 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, easeOut } from "motion/react";
 import Link from "next/link";
-import Image from "next/image";
 
 const container = {
   hidden: { opacity: 0 },
@@ -20,7 +19,7 @@ const item = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
+    transition: { duration: 0.8, ease: easeOut },
   },
 };
 
@@ -44,7 +43,7 @@ export default function Home() {
         >
           <motion.div variants={item} className="mb-6">
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent mb-4">
-              Hi, I'm NAVAL
+              Hi, I&apos;m NAVAL
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
               Transforming data into insights, and insights into impactful decisions

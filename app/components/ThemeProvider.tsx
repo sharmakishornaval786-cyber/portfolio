@@ -31,13 +31,6 @@ export default function ThemeProvider({
     }
   };
 
-  const toggleTheme = () => {
-    const newValue = !isDark;
-    setIsDark(newValue);
-    localStorage.setItem("theme", newValue ? "dark" : "light");
-    updateTheme(newValue);
-  };
-
   if (!isMounted) return <>{children}</>;
 
   return (
