@@ -2,7 +2,7 @@
 
 Yo! Welcome to my portfolio. This is where I showcase everything I'm working on - data analytics projects, publications, and cool stuff I build.
 
-**[Check it out live →](https://naval-portfolio-sharmakishornaval786-cybers-projects.vercel.app)**
+**[🎉 Check it out LIVE →](https://portfolio-ashen-one-10.vercel.app)**
 
 ## What you'll find here
 
