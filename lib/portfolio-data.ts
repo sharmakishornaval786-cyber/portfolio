@@ -35,6 +35,27 @@ export interface Bio {
 }
 
 export const PROJECTS: Project[] = [
+  {
+    id: "1",
+    title: "Portfolio Website",
+    description: "A modern, responsive portfolio website showcasing projects and skills",
+    longDescription: "A modern, fully responsive portfolio website built with Next.js 15 and TypeScript. Features include dark mode toggle, smooth animations, project showcase with detail pages, contact form with email integration, and SEO optimization for better discoverability.",
+    image: "/images/portfolio.jpg",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Resend"],
+    github: "https://github.com",
+    live: "https://portfolio-ashen-one-10.vercel.app/",
+    features: [
+      "Responsive design optimized for all devices",
+      "Dark/light mode toggle with persistent preferences",
+      "Smooth scroll animations and transitions",
+      "Project showcase with detailed project pages",
+      "Contact form with email integration",
+      "SEO optimized with meta tags",
+      "Performance optimized with lazy loading"
+    ],
+    role: "Full Stack Developer",
+    duration: "2 months"
+  }
 ];
 
 export const SKILLS: Skill[] = [
