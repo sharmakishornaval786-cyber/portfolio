@@ -5,7 +5,7 @@ import Footer from "@/app/components/Footer";
 import ThemeProvider from "@/app/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "NAVAL | Full-Stack Developer",
+  title: "NAVAL | Data Analyst",
   description: "Showcase of NAVAL's software development projects and expertise",
   keywords: "portfolio, developer, projects, software engineering",
   authors: [{ name: "Your Name" }],
