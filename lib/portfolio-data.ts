@@ -22,7 +22,7 @@ export interface Publication {
   title: string;
   authors: string[];
   journal: string;
-  year: number;
+  year?: number;
   description: string;
   doi?: string;
   url?: string;
