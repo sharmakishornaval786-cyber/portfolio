@@ -7,7 +7,7 @@ Yo! Welcome to my portfolio. This is where I showcase everything I'm working on 
 ## What you'll find here
 
 - 📊 **Data Analytics Projects** - Real projects where I turned raw data into insights
-- 📰 **Research & Publications** - Papers on AI, 6G, and smart grids
+- 📰 **Research & Publications** - Papers on which i work 
 - 🎨 **Interactive Portfolio** - Smooth animations, dark mode, works everywhere
 - 💬 **Contact Section** - Hit me up directly through the site
 
