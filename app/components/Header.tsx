@@ -21,7 +21,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-          PortalX
+          Naval Portfolio
         </Link>
 
         {/* Desktop Navigation */}
