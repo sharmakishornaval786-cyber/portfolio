@@ -2,12 +2,12 @@
 
 Yo! Welcome to my portfolio. This is where I showcase everything I'm working on - data analytics projects, publications, and cool stuff I build.
 
-**[Check it out live →](https://portfoliomy-portfolio.vercel.app)**
+**[Check it out live →](https://portfoliomy-portfolio-2024.vercel.app)**
 
 ## What you'll find here
 
 - 📊 **Data Analytics Projects** - Real projects where I turned raw data into insights
-- 📰 **Research & Publications** - Papers on which i work
+- 📰 **Research & Publications** - Papers on AI, 6G, and smart grids
 - 🎨 **Interactive Portfolio** - Smooth animations, dark mode, works everywhere
 - 💬 **Contact Section** - Hit me up directly through the site
 
@@ -134,7 +134,7 @@ Works on:
 ---
 
 **Made by:** Naval Kishor Sharma
-**Live at:** https://portfoliomy-portfolio.vercel.app
+**Live at:** https://portfoliomy-portfolio-2024.vercel.app
 **GitHub:** https://github.com/sharmakishornaval786-cyber/portfolio
 
 Questions? Open an issue on GitHub or hit the contact form on the site!
