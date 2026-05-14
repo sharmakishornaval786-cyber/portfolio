@@ -2,7 +2,7 @@
 
 Yo! Welcome to my portfolio. This is where I showcase everything I'm working on - data analytics projects, publications, and cool stuff I build.
 
-**[Check it out live →](https://portalx.com)**
+**[Check it out live →](https://portalx.vercel.app)**
 
 ## What you'll find here
 
@@ -134,7 +134,7 @@ Works on:
 ---
 
 **Made by:** Naval Kishor Sharma
-**Live at:** https://portalx.com
+**Live at:** https://portalx.vercel.app
 **GitHub:** https://github.com/sharmakishornaval786-cyber/portfolio
 
 Questions? Open an issue on GitHub or hit the contact form on the site!
