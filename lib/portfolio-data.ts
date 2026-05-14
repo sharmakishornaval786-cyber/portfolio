@@ -34,6 +34,20 @@ export interface Bio {
   skills: Skill[];
 }
 
+export interface SocialLinks {
+  github: string;
+  linkedin: string;
+  resume: string;
+  email: string;
+}
+
+export const SOCIAL_LINKS: SocialLinks = {
+  github: "https://github.com",
+  linkedin: "https://linkedin.com",
+  resume: "/resume.pdf",
+  email: "sharmakishornaval@gmail.com",
+};
+
 export const PROJECTS: Project[] = [
   {
     id: "1",
