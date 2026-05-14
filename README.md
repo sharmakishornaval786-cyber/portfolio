@@ -1,147 +1,141 @@
-# My Portfolio 🎯
+# Naval's Portfolio 🚀
 
-Yo! This is my personal portfolio website where I showcase my projects, skills, and publications. Built with Next.js and Tailwind CSS with smooth animations and dark mode support.
+Yo! Welcome to my portfolio. This is where I showcase everything I'm working on - data analytics projects, publications, and cool stuff I build.
 
-## What's in here? 
+**[Check it out live →](https://portfoliomy-portfolio-2024.vercel.app)**
 
-- **Responsive & Works Everywhere** - Looks good on phone, tablet, desktop - khi bhi karo
-- **Dark Mode** - Eyes ke liye behtar, raat ko use karo
-- **Cool Animations** - Scroll karo aur dekho fancy effects
-- **Projects Section** - Meri saari projects showcase
-- **Contact Form** - Direct message bhej sakte ho
-- **Fast & Optimized** - Quick loading, proper images
+## What you'll find here
 
-## Quick Start
+- 📊 **Data Analytics Projects** - Real projects where I turned raw data into insights
+- 📰 **Research & Publications** - Papers on AI, 6G, and smart grids
+- 🎨 **Interactive Portfolio** - Smooth animations, dark mode, works everywhere
+- 💬 **Contact Section** - Hit me up directly through the site
 
-### Need to have
-- Node.js 18+
-- npm ya yarn
+## Stack I used
 
-### Setup karo
+```
+Next.js 15 + TypeScript + Tailwind CSS
+Motion.js for animations + Resend for emails
+Deployed on Vercel (auto-deploys when I push)
+```
 
-1. **Clone karo:**
+## Run it locally
+
 ```bash
+# Clone
 git clone https://github.com/sharmakishornaval786-cyber/portfolio.git
 cd portfolio
-```
 
-2. **Dependencies install karo:**
-```bash
+# Install
 npm install
-```
 
-3. **Environment variables set karo (.env.local mein):**
-```
+# Set env (make .env.local)
 RESEND_API_KEY=your_key_here
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-```
 
-Resend API key ke liye:
-- Go to [Resend.com](https://resend.com)
-- Signup karo (free)
-- API Keys section mein new key generate karo
-- Copy paste `.env.local` mein
-
-### Development mein chalao
-
-```bash
+# Start
 npm run dev
+
+# Go to http://localhost:3000
 ```
 
-Fir [http://localhost:3000](http://localhost:3000) pe jaao
+## Want to customize?
 
-### Production ke liye build karo
+**Edit these files:**
+
+| What | Where |
+|------|-------|
+| My projects, skills, bio | `lib/portfolio-data.ts` |
+| Colors & theme | `tailwind.config.ts` |
+| Site title/meta | `app/layout.tsx` |
+| Social links | `app/components/Footer.tsx` |
+
+**Add project example:**
+```typescript
+// In lib/portfolio-data.ts
+{
+  id: "your-id",
+  title: "Cool Project",
+  description: "What it does",
+  image: "/images/pic.jpg",
+  tech: ["React", "Python", "etc"],
+  github: "link",
+  live: "link"
+}
+```
+
+## Email setup (for contact form)
+
+1. Go to [resend.com](https://resend.com) → Sign up free
+2. Get API key
+3. Add to `.env.local` as `RESEND_API_KEY`
+4. Update email in `app/api/contact/route.ts`
+5. Done! Contact form works now
+
+## Deploy it (Vercel rocks for this)
 
 ```bash
-npm run build
-npm start
+# Just push to GitHub
+git push
+
+# Vercel auto-deploys
+# Your changes go live in ~1 min
 ```
 
-## Folder Structure
+Or manually:
+1. Push to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Import repo → add env vars → deploy
+4. Done!
+
+## File structure
 
 ```
 portfolio/
 ├── app/
-│   ├── components/     # Reusable components
-│   ├── sections/       # Pages (about, projects, contact)
-│   ├── api/            # Backend endpoints
-│   └── globals.css     # Styles
+│   ├── components/     ← Buttons, cards, header, footer
+│   ├── sections/       ← About, projects, contact pages
+│   ├── api/            ← Contact form backend
+│   └── globals.css     ← Global styles
 ├── lib/
-│   └── portfolio-data.ts    # All my content
+│   └── portfolio-data.ts  ← All my content (edit this!)
 ├── public/
-│   └── images/         # Photos
-└── tailwind.config.ts  # Theme colors
+│   └── images/         ← My project images
+└── tailwind.config.ts  ← Colors & animations
 ```
 
-## Customize Karo
+## Quick commands
 
-### Apni Info Add Karo
-
-`lib/portfolio-data.ts` mein:
-- Projects add karo with description, tech stack, links
-- Skills aur categories likho
-- Apne baare mein bio likho
-
-### Site Ko Personalize Karo
-
-1. Title/description change: `app/layout.tsx`
-2. Colors: `tailwind.config.ts` 
-3. Content: Individual pages mein
-4. Social links: `app/components/Footer.tsx`
-
-### Projects Add Karo
-
-`lib/portfolio-data.ts` mein `PROJECTS` array mein add karo:
-
-```typescript
-{
-  id: "7",
-  title: "Your Project",
-  description: "Ek line description",
-  longDescription: "Details",
-  image: "/images/project.jpg",
-  tech: ["React", "Node.js", "MongoDB"],
-  github: "https://github.com/yourname/project",
-  live: "https://project.com",
-}
+```bash
+npm run dev      # Local dev (http://localhost:3000)
+npm run build    # Build for production
+npm run start    # Run production build
+npm run lint     # Check code quality
 ```
 
-## Email Setup
+## Made with
 
-Contact form ke liye Resend use kar rahe hain:
+- **Next.js** - React framework
+- **TypeScript** - Type safety
+- **Tailwind** - Styling (way faster)
+- **Motion** - Smooth animations on scroll
+- **Resend** - Email delivery
+- **Vercel** - Hosting (crazy fast)
 
-1. Signup karo [Resend](https://resend.com) mein
-2. API key copy karo aur `.env.local` mein paste karo
-3. `app/api/contact/route.ts` mein apna email update karo
-4. Test karo contact form se
+## Browser support
 
-## Deploy Karo
+Works on:
+- Chrome ✅
+- Firefox ✅
+- Safari ✅
+- Edge ✅
+- Mobile ✅
 
-### Vercel mein (Best option)
+---
 
-1. Push GitHub pe
-2. [Vercel](https://vercel.com) pe jaao
-3. New Project → import repo
-4. Environment variables add karo
-5. Deploy button click
+**Made by:** Naval Kishor Sharma
+**Live at:** https://portfoliomy-portfolio-2024.vercel.app
+**GitHub:** https://github.com/sharmakishornaval786-cyber/portfolio
 
-Done! Website live ho jayegi automatically.
+Questions? Open an issue on GitHub or hit the contact form on the site!
 
-### Technologies
-
-- Next.js 15
-- TypeScript  
-- Tailwind CSS
-- Motion.js (animations)
-- Resend (emails)
-
-## Todo ✅
-
-- [ ] Apne projects add karo
-- [ ] Images add karo `/public/images/` mein
-- [ ] Resend API key setup karo
-- [ ] Colors customize karo
-- [ ] Deploy karo
-- [ ] Custom domain lagao (optional)
-
-That's it! Maza karo building! 🎉
