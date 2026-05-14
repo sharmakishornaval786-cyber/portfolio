@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
       },
       body: JSON.stringify({
         from: "contact@portfolio.dev",
-        to: "sharmakishornaval@gmail.com", // Change to your email
+        to: "sharmakishornaval786@gmail.com",
         replyTo: body.email,
         subject: `New message from ${body.name}`,
         html: `
