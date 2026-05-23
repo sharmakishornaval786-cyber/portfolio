@@ -2,6 +2,8 @@
 
 import { motion, easeOut } from "motion/react";
 import Link from "next/link";
+import Image from "next/image";
+import { PROJECTS } from "@/lib/portfolio-data";
 
 const container = {
   hidden: { opacity: 0 },
@@ -92,23 +94,32 @@ export default function Home() {
         >
           <h2 className="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            {[1, 2].map((index) => (
+            {PROJECTS.map((project, index) => (
               <motion.div
-                key={index}
+                key={project.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 className="group bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300"
               >
-                <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-600 group-hover:scale-105 transition-transform duration-300"></div>
+                <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-blue-400 to-purple-600">
+                  {project.image && (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                  )}
+                </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Project {index}</h3>
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    A showcase of my latest work and technical expertise.
+                    {project.description}
                   </p>
                   <Link
-                    href={`/sections/projects`}
+                    href={`/sections/projects/${project.id}`}
                     className="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
                   >
                     View Project →

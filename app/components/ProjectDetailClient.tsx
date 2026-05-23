@@ -146,6 +146,16 @@ export default function ProjectDetailClient({
               viewport={{ once: true }}
               className="space-y-3"
             >
+              {project.powerbi && (
+                <a
+                  href={project.powerbi}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full px-4 py-3 bg-yellow-600 text-white text-center rounded-lg hover:bg-yellow-700 transition-colors font-semibold"
+                >
+                  Power BI Dashboard
+                </a>
+              )}
               {project.github && (
                 <a
                   href={project.github}

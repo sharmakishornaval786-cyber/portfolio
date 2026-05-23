@@ -12,6 +12,7 @@ interface ProjectCardProps {
   tech: string[];
   github?: string;
   live?: string;
+  powerbi?: string;
 }
 
 export default function ProjectCard({
@@ -22,6 +23,7 @@ export default function ProjectCard({
   tech,
   github,
   live,
+  powerbi,
 }: ProjectCardProps) {
   return (
     <motion.div
@@ -72,6 +74,16 @@ export default function ProjectCard({
 
         {/* Links */}
         <div className="flex gap-3">
+          {powerbi && (
+            <a
+              href={powerbi}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 text-center px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition-colors text-sm font-semibold"
+            >
+              Power BI
+            </a>
+          )}
           {github && (
             <a
               href={github}
@@ -92,7 +104,7 @@ export default function ProjectCard({
               Live Demo
             </a>
           )}
-          {!github && !live && (
+          {!github && !live && !powerbi && (
             <Link
               href={`/sections/projects/${id}`}
               className="flex-1 text-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm font-semibold"

@@ -7,6 +7,7 @@ export interface Project {
   tech: string[];
   github?: string;
   live?: string;
+  powerbi?: string;
   features: string[];
   role: string;
   duration: string;
@@ -69,6 +70,27 @@ export const PROJECTS: Project[] = [
     ],
     role: "Full Stack Developer",
     duration: "2 months"
+  },
+  {
+    id: "2",
+    title: "Superstore Sales Dashboard",
+    description: "Comprehensive Power BI dashboard for sales, profit, and customer insights tracking",
+    longDescription: "A sophisticated Power BI dashboard designed for Superstore sales analytics. This dashboard provides real-time insights into regional sales performance, profit margins, and customer behavior patterns. Features interactive visualizations including region-wise sales maps, sales trend analysis, and category-wise breakdowns enabling stakeholders to make data-driven decisions.",
+    image: "/images/sales-dashboard.jpg",
+    tech: ["Power BI", "Excel"],
+    powerbi: "/NAVAL.pbix",
+    features: [
+      "Region-wise sales visualization with interactive map",
+      "Real-time KPI tracking (Total Sales, Profit, Orders, Profit Margin)",
+      "Sales trend analysis with year-over-year comparison",
+      "Category-wise sales breakdown and performance metrics",
+      "Dynamic filtering by Region, Segment, and Category",
+      "Customer insights and behavior analysis",
+      "Automated data refresh from SQL database",
+      "Drill-down capabilities for detailed regional analysis"
+    ],
+    role: "Data Analyst",
+    duration: "2 weeks"
   }
 ];
 
