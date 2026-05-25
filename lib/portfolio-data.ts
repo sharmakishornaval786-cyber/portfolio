@@ -29,6 +29,17 @@ export interface Publication {
   url?: string;
 }
 
+export interface Certificate {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  description?: string;
+  credentialUrl?: string;
+  image?: string;
+  type: "professional" | "academic";
+}
+
 export interface Bio {
   intro: string;
   summary: string;
@@ -117,6 +128,18 @@ export const PUBLICATIONS: Publication[] = [
     journal: "IEEE Transactions on Communications",
     description: "This research proposes an AI-enabled framework for joint optimization of 6G cognitive radio QoS and hybrid microgrid energy efficiency. The study employs federated learning and reinforcement learning algorithms to achieve optimal resource allocation and energy management in next-generation networks.",
   }
+];
+
+export const CERTIFICATES: Certificate[] = [
+  {
+    id: "4",
+    title: "Introduction to MS Excel",
+    issuer: "Simplilearn",
+    date: "2026",
+    description: "Foundational certification in MS Excel covering basic spreadsheet operations, formulas, and data organization for beginners.",
+    credentialUrl: "https://lms.simplilearn.com/courses/4277/Introduction%20to%20MS%20Excel/certificate/download-skillup",
+    type: "professional",
+  },
 ];
 
 export const BIO: Bio = {

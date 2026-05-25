@@ -78,6 +78,12 @@ export default function Footer() {
                 Publications
               </Link>
               <Link
+                href="/sections/certificates"
+                className="block text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
+                Certificates
+              </Link>
+              <Link
                 href="/sections/contact"
                 className="block text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
