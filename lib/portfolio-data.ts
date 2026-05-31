@@ -54,8 +54,8 @@ export interface SocialLinks {
 }
 
 export const SOCIAL_LINKS: SocialLinks = {
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
+  github: "https://github.com/sharmakishornaval786-cyber",
+  linkedin: "https://www.linkedin.com/in/navalkishorsharma-dev/",
   resume: "/resume.pdf",
   email: "sharmakishornaval@gmail.com",
 };
@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
     longDescription: "A modern, fully responsive portfolio website built with Next.js 15 and TypeScript. Features include dark mode toggle, smooth animations, project showcase with detail pages, contact form with email integration, and SEO optimization for better discoverability.",
     image: "/images/portfolio.jpg",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Resend"],
-    github: "https://github.com",
+    github: "https://github.com/sharmakishornaval786-cyber/portfolio",
     live: "https://portfolio-ashen-one-10.vercel.app/",
     features: [
       "Responsive design optimized for all devices",
@@ -102,6 +102,26 @@ export const PROJECTS: Project[] = [
     ],
     role: "Data Analyst",
     duration: "2 weeks"
+  },
+  {
+    id: "3",
+    title: "Netflix Data Analysis Project",
+    description: "Comprehensive analysis of Netflix content library and viewing patterns",
+    longDescription: "An in-depth data analysis project examining Netflix's content library, user viewing patterns, and performance metrics. This project involved data cleaning, exploratory data analysis, and creating interactive visualizations to uncover trends in content types, genres, release years, and regional popularity.",
+    image: "/images/netflix-analysis.jpg",
+    tech: ["Python", "Pandas", "Matplotlib", "Jupyter Notebook"],
+    github: "https://github.com/sharmakishornaval786-cyber/Netflix-Data-Analysis",
+    features: [
+      "Data cleaning and preprocessing of Netflix dataset",
+      "Exploratory Data Analysis (EDA) with statistical insights",
+      "Interactive visualizations for content insights",
+      "Genre-wise and country-wise performance analysis",
+      "Trend analysis for content releases over time",
+      "Correlation analysis between content attributes and popularity",
+      "Data visualization using Python libraries"
+    ],
+    role: "Data Analyst",
+    duration: "2.5 hours"
   }
 ];
 
@@ -109,8 +129,14 @@ export const SKILLS: Skill[] = [
   { name: "SQL", category: "Database" },
   { name: "Power BI", category: "Data Visualization" },
   { name: "Tableau", category: "Data Visualization" },
+  { name: "Matplotlib", category: "Data Visualization" },
   { name: "Microsoft Excel", category: "Tools" },
+  { name: "Jupyter Notebook", category: "Tools" },
+  { name: "Git", category: "Tools" },
+  { name: "GitHub", category: "Tools" },
   { name: "Python", category: "Languages" },
+  { name: "Pandas", category: "Libraries" },
+  { name: "NumPy", category: "Libraries" },
 ];
 
 export const PUBLICATIONS: Publication[] = [
