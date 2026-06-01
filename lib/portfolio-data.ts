@@ -89,7 +89,7 @@ export const PROJECTS: Project[] = [
     longDescription: "A sophisticated Power BI dashboard designed for Superstore sales analytics. This dashboard provides real-time insights into regional sales performance, profit margins, and customer behavior patterns. Features interactive visualizations including region-wise sales maps, sales trend analysis, and category-wise breakdowns enabling stakeholders to make data-driven decisions.",
     image: "/images/sales-dashboard.jpg",
     tech: ["Power BI", "Excel"],
-    powerbi: "/NAVAL.pbix",
+    github: "https://github.com/sharmakishornaval786-cyber/Superstore-Sales-Analysis",
     features: [
       "Region-wise sales visualization with interactive map",
       "Real-time KPI tracking (Total Sales, Profit, Orders, Profit Margin)",
