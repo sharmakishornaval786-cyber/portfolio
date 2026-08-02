@@ -51,10 +51,7 @@ export default function Publications() {
               >
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <div className="inline-flex rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">
-                      {pub.journal}
-                    </div>
-                    <h3 className="mt-3 text-xl font-semibold text-gray-900 dark:text-white">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       {pub.title}
                     </h3>
                     <p className="mt-2 text-sm text-blue-600 dark:text-blue-400">
