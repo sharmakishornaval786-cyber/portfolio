@@ -47,7 +47,7 @@ export default function Publications() {
               <motion.article
                 key={pub.id}
                 variants={itemVariants}
-                className="rounded-2xl border border-gray-300 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-gray-700 dark:bg-gray-950"
+                className="rounded-lg border border-gray-200 bg-gray-50 p-6 transition-colors hover:border-blue-600 dark:border-gray-800 dark:bg-gray-900 dark:hover:border-blue-400"
               >
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
