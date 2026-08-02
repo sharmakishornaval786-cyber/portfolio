@@ -11,6 +11,7 @@ export interface Project {
   features: string[];
   role: string;
   duration: string;
+  section: "analytics" | "projects";
 }
 
 export interface Skill {
@@ -38,6 +39,7 @@ export interface Certificate {
   credentialUrl?: string;
   image?: string;
   type: "professional" | "academic";
+  category?: "industry-experience";
 }
 
 export interface Bio {
@@ -80,7 +82,8 @@ export const PROJECTS: Project[] = [
       "Performance optimized with lazy loading"
     ],
     role: "Full Stack Developer",
-    duration: "2 months"
+    duration: "2 months",
+    section: "projects"
   },
   {
     id: "2",
@@ -101,30 +104,55 @@ export const PROJECTS: Project[] = [
       "Drill-down capabilities for detailed regional analysis"
     ],
     role: "Data Analyst",
-    duration: "2 weeks"
+    duration: "2 weeks",
+    section: "analytics"
   },
   {
-    id: "3",
-    title: "Netflix Data Analysis Project",
-    description: "Comprehensive analysis of Netflix content library and viewing patterns",
-    longDescription: "An in-depth data analysis project examining Netflix's content library, user viewing patterns, and performance metrics. This project involved data cleaning, exploratory data analysis, and creating interactive visualizations to uncover trends in content types, genres, release years, and regional popularity.",
-    image: "/images/netflix-analysis.jpg",
-    tech: ["Python", "Pandas", "Matplotlib", "Jupyter Notebook"],
-    github: "https://github.com/sharmakishornaval786-cyber/Netflix-Data-Analysis",
+  id: "4",
+  title: "End-to-End Supply Chain Analytics Project",
+  description: "End-to-end analytics workflow covering supply chain optimization, demand forecasting, and operational insights",
+  longDescription: "Developed an end-to-end Supply Chain Analytics solution by transforming a raw dataset of 180,519 records and 53 features into actionable business insights using Python, MySQL, and Power BI. The project followed the complete analytics lifecycle, including data cleaning, SQL-based business analysis, interactive dashboard development, and business recommendations to support data-driven decision-making.",
+  image: "/images/supply-chain-analysis.jpg",
+  tech: ["Python", "SQL", "Pandas", "Power BI", "MySQL", "DAX"],
+  github: "https://github.com/sharmakishornaval786-cyber/Supply-Chain-Analytics-Project",
     features: [
-      "Data cleaning and preprocessing of Netflix dataset",
-      "Exploratory Data Analysis (EDA) with statistical insights",
-      "Interactive visualizations for content insights",
-      "Genre-wise and country-wise performance analysis",
-      "Trend analysis for content releases over time",
-      "Correlation analysis between content attributes and popularity",
-      "Data visualization using Python libraries"
+    "Cleaned and preprocessed raw supply chain data using Python (Pandas).",
+    "Identified and handled missing values while validating data quality.",
+    "Verified that the dataset contained no duplicate records.",
+    "Designed and executed SQL queries to analyze:",
+      "Delivery Status",
+      "Late Delivery Risk by Market",
+      "Top Product Categories by Sales",
+      "Shipping Mode Distribution",
+    "Developed an interactive Power BI dashboard featuring KPIs, category analysis, shipping insights, and market-level performance.",
+    "Generated business insights and strategic recommendations to improve supply chain operations and decision-making."
+  ],
+  role: "Data Analyst",
+  duration: "2 weeks",
+  section: "analytics"
+},
+{
+  id: "3",
+  title: "Netflix Data Analysis Project",
+  description: "Comprehensive analysis of Netflix content library and viewing patterns",
+  longDescription: "An in-depth data analysis project examining Netflix's content library, user viewing patterns, and performance metrics. This project involved data cleaning, exploratory data analysis, and creating interactive visualizations to uncover trends in content types, genres, release years, and regional popularity.",
+  image: "/images/netflix-analysis.jpg",
+  tech: ["Python", "Pandas", "Matplotlib", "Jupyter Notebook"],
+  github: "https://github.com/sharmakishornaval786-cyber/Netflix-Data-Analysis",
+  features: [
+    "Data cleaning and preprocessing of Netflix dataset",
+    "Exploratory Data Analysis (EDA) with statistical insights",
+    "Interactive visualizations for content insights",
+    "Genre-wise and country-wise performance analysis",
+    "Trend analysis for content releases over time",
+    "Correlation analysis between content attributes and popularity",
+    "Data visualization using Python libraries"
     ],
     role: "Data Analyst",
-    duration: "2.5 hours"
-  }
+  duration: "2 hours",
+    section: "analytics"
+}
 ];
-
 export const SKILLS: Skill[] = [
   { name: "SQL", category: "Database" },
   { name: "Power BI", category: "Data Visualization" },
@@ -146,6 +174,7 @@ export const PUBLICATIONS: Publication[] = [
     authors: ["Nookala Venu", "Mehak Kapoor", "Nitesh Patidar", "Naval Kishor Sharma", "Manjeet Rajput", "Vikash Dhakad"],
     journal: "IEEE Communications Letters",
     description: "This paper presents an innovative AI-driven hybrid RF/FSO (Radio Frequency/Free Space Optical) communication framework designed for secure smart grid and electric vehicle networks. The framework leverages machine learning techniques to optimize performance under composite fading conditions.",
+    doi: "10.2991/978-94-6239-707-1_2",
   },
   {
     id: "2",
@@ -153,12 +182,60 @@ export const PUBLICATIONS: Publication[] = [
     authors: ["Nookala Venu", "Mehak Kapoor", "Nitesh Patidar", "Naval Kishor Sharma", "Manjeet Rajput", "Vikash Dhakad"],
     journal: "IEEE Transactions on Communications",
     description: "This research proposes an AI-enabled framework for joint optimization of 6G cognitive radio QoS and hybrid microgrid energy efficiency. The study employs federated learning and reinforcement learning algorithms to achieve optimal resource allocation and energy management in next-generation networks.",
+    doi: "10.2991/978-94-6239-707-1_3",
   }
 ];
 
 export const CERTIFICATES: Certificate[] = [
   {
+    id: "1",
+    title: "Data Analytics Job Simulation",
+    issuer: "Deloitte Australia",
+    date: "2026",
+    description: "Completed Deloitte Australia virtual job simulation focused on practical data analytics and business problem-solving.",
+    credentialUrl: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_6a2e79a0e1f2203d7130b1a7_1783941774114_completion_certificate.pdf",
+    type: "professional",
+    category: "industry-experience",
+  },
+  {
+    id: "2",
+    title: "Data Visualisation: Empowering Business with Effective Insights Job Simulation",
+    issuer: "Tata",
+    date: "2026",
+    description: "Completed Tata virtual job simulation on designing impactful data visualizations and communicating business insights effectively.",
+    credentialUrl: "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_6a2e79a0e1f2203d7130b1a7_1781667002347_completion_certificate.pdf",
+    type: "professional",
+    category: "industry-experience",
+  },
+  {
     id: "4",
+    title: "Google AI Essentials",
+    issuer: "Google",
+    date: "2026",
+    description: "Completed Google AI Essentials program covering practical AI concepts, tools, and responsible AI usage.",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/specialization/3O82MIW2PR69",
+    type: "professional",
+  },
+  {
+    id: "5",
+    title: "Google Prompting Essentials",
+    issuer: "Google",
+    date: "2026",
+    description: "Completed Google Prompting Essentials with hands-on learning for writing effective prompts across AI tasks.",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/specialization/M0RKI31XAO0W",
+    type: "professional",
+  },
+  {
+    id: "6",
+    title: "SQL (Basic)",
+    issuer: "HackerRank",
+    date: "2026",
+    description: "Certified in SQL fundamentals including basic querying, filtering, joins, and data retrieval logic.",
+    credentialUrl: "https://www.hackerrank.com/certificates/iframe/2eeab23a91b2",
+    type: "professional",
+  },
+  {
+    id: "7",
     title: "Introduction to MS Excel",
     issuer: "Simplilearn",
     date: "2026",
